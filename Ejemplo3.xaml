@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo031925597.Ejemplo3"
+             Title="Ejemplo3">
+    <!--<Summary>
+     <Createddate>23/5/2024</createddate>
+     <company>Shelini</company>
+     <lastmodificationdate>23/5/2024</lastmodificationdate>
+     <lastmodificationdescription>
+         Se agregó imágen alusiva al ejemplo
+     </lastmodificationdescription>
+     <lastmodifierautor>Maynor</lastmodifierautor>
+     </Summary>
+     -->
+    <StackLayout Margin="20,35,20,20">
+        <Image Source="entry.png" WidthRequest="360" HeightRequest="220" />
+        <Entry Placeholder="Usuario"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="True"
+               Keyboard="Text"
+               CharacterSpacing="10"
+               TextChanged="Entry_TextChanged"
+               Completed="Entry_Completed"/>
+    </StackLayout>
+</ContentPage>
